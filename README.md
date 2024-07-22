@@ -1,3 +1,6 @@
+
+# Predicción de la demanda eléctrica mediante series temporales
+
 **Descripción de la base de datos**:
 Fue extraida de Kaggle y abarca datos entre el 1 de enero de 2015 y el 6 de octubre de 2020. Durante algunos intervalos intradiarios, la PRR fue negativa, por lo que eran los productores de energía los que pagaban a los consumidores y no a la inversa. A continuación se ofrece una breve descripción de los datos.
 
@@ -18,3 +21,5 @@ Fue extraida de Kaggle y abarca datos entre el 1 de enero de 2015 y el 6 de octu
 
 **Análisis**:
 En el análisis se pretende comprobar que la técnica de suavizado exponencial, un algoritmo de series temporales, realiza una buena predicción de la demanda eléctrica. Se apuesta por esta técnica ya que es capaz de incorporar efectos como el nivel de la serie, la tendencia y la estacionalidad. Para poder llevar a cabo esto, el algoritmo posee tres grandes variaciones, el suavizado exponencial simple, para datos sin tendencia ni estacionalidad, el doble para datos con tendencia sin estacionalidad, y el triple, como sería en nuestro caso, para datos con ambos efectos. Este modelo suele funcionar mejor que el ARIMA en casos más microeconómicos como la predicción de la demanda.
+
+## Lenguaje utilizado: Python.
